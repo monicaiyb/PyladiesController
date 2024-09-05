@@ -1,0 +1,16 @@
+<div calss ="post_preview">
+<a href="">
+    <h2 class="post-title"{{post.title}}></h2>
+    <h3 class=""post-subtitle>{{post.content |safe| truncatechars_html:100}}</h3>
+
+</a>
+
+<p class="post-meta">
+    posted by
+    <a href="#!">{{post.authour.username}}</a>
+    on {{post.date_created |date}} -{{post.date.created |naturaltime}}
+
+
+</p>
+
+</div>
